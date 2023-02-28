@@ -5,16 +5,16 @@
 
 * Для удобства ввода изначального массива релизован ввод строки, которую программа сама разложит в массив. Разделителями при этом будут считаться знаки: пробел . , ! ; ?
 
- '''string[] SplitStringToArray(string s)
+``` string[] SplitStringToArray(string s)
 {
     char[] separators = new char[] { ' ', '.', ',', '!', ';', '?' };
     string[] subS = s.Split(separators, StringSplitOptions.RemoveEmptyEntries);
     return subS;
-}'''
+}```
 
 * Реализован ввод числа для отбора в массиве. Также реализована проверка ввода числа. При некорректном вводе число будет запрошено повторно.
 
-int EnterCount(string welcomeToInput)
+```int EnterCount(string welcomeToInput)
 {
  bool inputOk = false;
  int count = 0;
@@ -29,4 +29,4 @@ int EnterCount(string welcomeToInput)
          System.Console.Write("Вы ввели не число. ");
  }
  return count;
-}
+}```
